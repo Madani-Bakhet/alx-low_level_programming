@@ -1,10 +1,15 @@
 #include <stdio.h>
-int main(void)
+
 /**
-  *describations
-  */
+ * main - Entry point of the program
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-    char* str1 = "\"Programming is like building a multilingual puzzle";
-    puts(str1);
+    char *message = "\"Programming is like building a multilingual puzzle";
+
+    puts(message);
+
     return (0);
 }
