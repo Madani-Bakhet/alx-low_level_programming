@@ -1,16 +1,13 @@
 #include <stdio.h>
-#include "_putchar.c"
+#include "main.h"
 
 /**
   * print_alphabet - print all alphabet
   */
 void print_alphabet(void)
 {
-	int i;
-	for (i = 0; i < 26; i++)
-	{
-		char a = 'a' + i;
-		_putchar(a);
-	}
+	char c;
+	for (c  = 'a'; c < 'z'; c++)
+		_putchar(c);
 	printf("\n");
 }
