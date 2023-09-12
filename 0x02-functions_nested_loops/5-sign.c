@@ -5,7 +5,7 @@
   * print_sign - to know sign of num
   * @n: input num
   *
-  * Return: 1 if greater than 0, -1 if less,0 otherwise 
+  * Return: 1 if greater than 0, -1 if less,0 otherwise
   */
 int print_sign(int n)
 {
