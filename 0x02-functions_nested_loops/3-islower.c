@@ -2,11 +2,11 @@
 #include <ctype.h>
 
 /**
-  * _islower - show letter is lowercase or no
+  * _islower - show if letter is lower or no
   * @c: testing char
   * Return: 1 if is lower or 0 if is otherwise
   */
-int _islower(char c)
+int _islower(int c)
 {
 	if (islower(c) != 0)
 		return (1);
