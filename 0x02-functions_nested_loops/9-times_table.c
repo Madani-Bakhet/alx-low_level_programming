@@ -6,21 +6,26 @@
   */
 void times_table(void)
 {
-	int i;
-	for (i = 0; i < 10; i++)
-	{
-		int j;
+	int num, mult, prod;
 
-		for (j = 0; j < 10; j++)
+	for (num = 0; num <= 9; num++)
+	{
+		_putchar('0');
+
+		for (mult = 1; mult <= 9; mult++)
 		{
-			printf("%d", i * j);
-			if (j < 9)
-				printf(",");
-			if (i * (j + 1) < 10)
-				printf("  ");
+			_putchar(',');
+			_putchar(' ');
+
+			prod = num * mult;
+
+			if (prod <= 9)
+				_putchar(' ');
 			else
-				printf(" ");
+				_putchar((prod / 10) + '0');
+
+			_putchar((prod % 10) + '0');
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
