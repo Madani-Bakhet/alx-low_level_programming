@@ -3,7 +3,7 @@
 
 /**
   * print_sign - to know sign of num
-  * @c: input num
+  * @n: input num
   *
   * Return: 1 if greater than 0, -1 if less,0 otherwise 
   */
