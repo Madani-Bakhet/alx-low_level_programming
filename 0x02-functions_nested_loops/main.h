@@ -8,3 +8,5 @@ int print_last_digit(int n);
 void times_table(void);
 void jack_bauer(void);
 int _putchar(char c);
+void print_to_98(int n);
+int add(int n, int m);
