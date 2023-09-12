@@ -1,10 +1,13 @@
-#iclude <stdio.h>
-#iclude "main.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
+  * 
+  * @n: input num
   *
+  * Return: 
   */
 
 {
-
+	
 }

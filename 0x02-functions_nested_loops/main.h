@@ -5,3 +5,6 @@ int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int i);
+int print_last_digit(int n);
+void times_table(void);
+void jack_bauer(void);
