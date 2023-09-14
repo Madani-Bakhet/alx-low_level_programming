@@ -2,6 +2,7 @@
 
 /**
   * print_numbers - print nums from 0 - 9
+  *
   */
 void print_most_numbers(void)
 {
