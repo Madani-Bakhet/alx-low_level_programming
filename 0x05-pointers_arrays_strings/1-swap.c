@@ -2,8 +2,8 @@
 
 /**
   * swap_int - swap two value
-  * @*a: first
-  * @*b: second
+  * @a: first
+  * @b: second
   */
 void swap_int(int *a, int *b)
 {

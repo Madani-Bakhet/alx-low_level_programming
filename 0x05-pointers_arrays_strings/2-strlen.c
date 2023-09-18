@@ -2,12 +2,12 @@
 
 /**
   * _strlen - returns length of string
-  * @*s: string
+  * @s: string
   *
-  * Retrun: length of string
+  * Retrun: length of @s
   */
 int _strlen(char *s)
 {
-	return strlen(s);
+	return (strlen(s));
 }
 
