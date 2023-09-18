@@ -11,6 +11,6 @@ void rev_string(char *s)
 	char temp[500];
 
 	for (i = len - 1; i >= 0; i--)
-		temp[len - i - 1] = s[i];
+		temp[len - (i + 1)] = s[i];
 	strcpy(s, temp);
 }
