@@ -1,19 +1,43 @@
-#include "main.h"
+/*
+ * File: 6-cap_string.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
 
 /**
-  * cap_string - cap first char
-  * @temp: string
-  *
-  * Return: the string after cap
-  */
-char *cap_string(char *temp)
+ * cap_string - Capitalizes all words of a string.
+ * @str: The string to be capitalized.
+ *
+ * Return: A pointer to the changed string.
+ */
+char *cap_string(char *str)
 {
-	int i, len = strlen(temp);
+	int index = 0;
 
-	for (i = 0; i < len; i++)
+	while (str[index])
 	{
-		if (temp[i-1] == ' ' || temp[i-1] == '\t' || temp[i-1] == '\n')
-			temp[i] = toupper(temp[i]);
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
-	return (temp);
+
+	return (str);
 }
