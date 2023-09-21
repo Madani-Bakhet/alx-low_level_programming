@@ -4,7 +4,7 @@
   * *string_toupper - convert to uppercase
   * @str: string
   *
-  * Return: uppercase string
+  * Return: a pointer to a string
   */
 char *string_toupper(char *temp)
 {
