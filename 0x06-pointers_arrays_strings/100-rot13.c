@@ -6,7 +6,8 @@
   *
   * Return: encoded string
   */
-char *rot13(char *str) {
+char *rot13(char *str)
+{
 	char *p = str;
 
 	for (; *p != '\0'; ++p)
