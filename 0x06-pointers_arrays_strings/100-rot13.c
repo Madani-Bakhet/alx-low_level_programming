@@ -6,9 +6,16 @@
   *
   * Return: encoded string
   */
-int main(void)
-{
-	char a = 'a' + 1;
-	printf("%c",a);
-	return (0);
+char *rot13(char *str) {
+	char *p = str;
+
+	for (; *p != '\0'; ++p)
+	{
+		char base = (*p >= 'a' && *p <= 'z') ? 'a' : ((*p >= 'A' && *p <= 'Z') ? 'A' : 0);
+		if (base)
+		{
+			*p = base + ((*p - base + 13) % 26);
+		}
+	}
+	return str;
 }
