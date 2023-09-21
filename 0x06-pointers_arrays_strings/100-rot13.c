@@ -14,9 +14,7 @@ char *rot13(char *str)
 	{
 		char base = (*p >= 'a' && *p <= 'z') ? 'a' : ((*p >= 'A' && *p <= 'Z') ? 'A' : 0);
 		if (base)
-		{
 			*p = base + ((*p - base + 13) % 26);
-		}
 	}
 	return (str);
 }
