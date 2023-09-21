@@ -9,10 +9,10 @@
 char *rot13(char *str)
 {
 	char *p = str;
-
+	char base;
 	for (; *p != '\0'; ++p)
 	{
-		char base = (*p >= 'a' && *p <= 'z') ? 'a' : ((*p >= 'A' && *p <= 'Z') ? 'A' : 0);
+		base = (*p >= 'a' && *p <= 'z') ? 'a' : ((*p >= 'A' && *p <= 'Z') ? 'A' : 0);
 		if (base)
 			*p = base + ((*p - base + 13) % 26);
 	}
