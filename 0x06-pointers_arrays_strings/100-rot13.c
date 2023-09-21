@@ -18,5 +18,5 @@ char *rot13(char *str)
 			*p = base + ((*p - base + 13) % 26);
 		}
 	}
-	return str;
+	return (str);
 }
