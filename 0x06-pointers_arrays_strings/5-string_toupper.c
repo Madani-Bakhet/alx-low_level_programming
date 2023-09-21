@@ -2,7 +2,7 @@
 
 /**
   * *string_toupper - convert to uppercase
-  * @*: string
+  * @str: string
   *
   * Return: uppercase string
   */
