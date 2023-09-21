@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * reversr_array - reverse array
+  * reverse_array - reverse array
   * @a: the array
   * @n: length
   */
