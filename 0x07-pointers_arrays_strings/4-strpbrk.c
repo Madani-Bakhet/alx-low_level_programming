@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
-  * _strspn - search string
+  * _strbrk - search string
   * @s: sring
   * @accept: string
   *
   * Return: return pointer
   */
-char *_strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	return (strspn(s,accept));
+	return (strpbrk(s,accept));
 }
