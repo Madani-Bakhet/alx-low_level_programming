@@ -9,5 +9,5 @@
   */
 char *_strspn(char *s, char *accept)
 {
-	return (strspn(s,accept));
+	return (strspn(s, accept));
 }
