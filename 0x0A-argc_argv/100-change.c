@@ -15,6 +15,11 @@ int main(int argc, char **argv)
 	if (argc == 2)
 	{
 		remin = atoi(*++argv);
+		if (remin < 0)
+		{
+			printf("0");
+			return (0);
+		}
 		sum += remin / 25;
 		remin = remin % 25;
 		sum += remin / 10;
