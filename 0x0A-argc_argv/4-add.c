@@ -3,6 +3,13 @@
 #include <stdbool.h>
 #include <ctype.h>
 
+/**
+  * main - main
+  * @argc: coount
+  * @argv: array
+  *
+  * Returns: 0
+  */
 int main(int argc, char *argv[])
 {
 	int i, j, sum = 0;
