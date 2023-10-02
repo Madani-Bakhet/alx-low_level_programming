@@ -24,12 +24,12 @@ int main(int argc, char **argv)
 		sum += remin / 2;
 		remin = remin % 2;
 		sum += remin / 1;
-		printf("%d", sum);
+		printf("%d\n", sum);
 		return (0);
 	}
 	else
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 }
