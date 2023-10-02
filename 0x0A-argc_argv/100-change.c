@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 		if (remin < 0)
 		{
 			printf("0");
-			return (0);
+			return (1);
 		}
 		sum += remin / 25;
 		remin = remin % 25;
