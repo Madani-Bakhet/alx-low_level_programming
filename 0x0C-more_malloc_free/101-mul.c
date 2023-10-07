@@ -192,7 +192,7 @@ int main(int argc, char *argv[])
 	char *final_prod, *next_prod;
 	int size, index, digit, zeroes = 0;
 
-	if (argc != 3)
+	if (argc != 3 && isdigit(argv[1]) && isdigit(argv[2]))
 	{
 		printf("Error\n");
 		exit(98);
