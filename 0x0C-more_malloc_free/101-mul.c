@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
 
 int find_len(char *str);
 char *create_xarray(int size);
@@ -192,7 +193,7 @@ int main(int argc, char *argv[])
 	char *final_prod, *next_prod;
 	int size, index, digit, zeroes = 0;
 
-	if (argc != 3 && isdigit(argv[1]) && isdigit(argv[2]))
+	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
